@@ -27,6 +27,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
   angular material , NgRx
 
 ## Screenshots :
-<img width="1406" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/30eda514-966d-4985-841e-aa3db05fdf3a">
-<img width="1420" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/748c4b01-2192-4641-bf4e-51755a309bd5">
-<img width="578" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/bf588026-547b-4457-a44a-5855e792cc35">
+<img width="399" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/c0e3153f-8968-4912-afe5-cdf8cf93a6b7">
+<img width="722" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/d3458217-4ca0-4dc4-9656-f560f5d2f0e1">
+<img width="1356" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/357c968d-79b7-4d54-966a-91f87a54cb50">
+<img width="1414" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/a88fd8a3-8f1c-46d1-87b5-300d330dbbc9">
+
+
+
