@@ -14,14 +14,19 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Implemented tasks
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- responsive handling
+- tasks display
+- tasks add modal
+- tasks delete modal
+- tasks status filter
+- task status toggle
+  
+## Tecnoligies and features :
+  angular material , NgRx
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Screenshots :
+<img width="1406" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/30eda514-966d-4985-841e-aa3db05fdf3a">
+<img width="1420" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/748c4b01-2192-4641-bf4e-51755a309bd5">
+<img width="578" alt="image" src="https://github.com/HeshamEG/angular-tasks-manager/assets/28273992/bf588026-547b-4457-a44a-5855e792cc35">
