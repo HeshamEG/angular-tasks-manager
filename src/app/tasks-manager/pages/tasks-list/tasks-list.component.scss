@@ -1,0 +1,56 @@
+// Reusable Color Palette
+$primary-color: #1e1c1c; // Primary text color
+$background-color: white; // Background color
+$border-color: #444444; // Border color
+$section-title-color: white; // Section title text color
+
+/* Component Styles */
+:host {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  margin-inline: 10vw; /* Set a margin on the left and right sides */
+  gap: 10px; /* Gap between child elements */
+}
+
+/* Card Styles */
+mat-card {
+  background-color: $background-color;
+
+  /* Task Item Styles */
+  .task-item:not(:last-child) {
+    border-bottom: 2px solid $border-color; /* Add a border between task items */
+  }
+
+  .task-item {
+    height: 4rem; /* Set a fixed height for each task item */
+
+    /* Task Item Container Styles */
+    .__task-item-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      /* Task Title Styles */
+      .__task-title {
+        color: $primary-color; /* Set text color using the primary color from the palette */
+        margin: 0; /* Remove margin */
+      }
+
+      /* Task Actions Container Styles */
+      .__task-actions {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* Section Title Styles */
+.section-title {
+  font-weight: 700; /* Set font weight */
+  font-size: 1.5rem; /* Set font size */
+  padding-left: 1rem; /* Add left padding */
+  color: $section-title-color; /* Set text color using the section title color from the palette */
+}

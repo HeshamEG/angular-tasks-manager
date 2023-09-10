@@ -1,0 +1,43 @@
+<!-- Filter Section -->
+<h4 class="section-title">Filter</h4>
+<mat-form-field>
+  <mat-label>Status</mat-label>
+  <!-- Status Filter Dropdown -->
+  <mat-select id="statusFilter" (selectionChange)="onChangeStatus($event)">
+    <!-- All Option -->
+    <mat-option [value]="null">all</mat-option>
+    <!-- Status Options Loop -->
+    <mat-option *ngFor="let status of statusOptions" [value]="status">
+      {{ status | statusFilter }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<!-- Task List Section -->
+<mat-card>
+  <mat-card-content>
+    <mat-list>
+      <!-- Task List Loop -->
+      <mat-list-item *ngFor="let task of tasks$ | async; trackBy: trackTaskById" class="task-item">
+        <div class="__task-item-container">
+          <!-- Task Title -->
+          <h2 class="__task-title">{{ task.title }}</h2>
+          <div class="__task-actions">
+            <!-- Toggle Task Status -->
+            <mat-slide-toggle
+              [checked]="task.status.id === COMPLETED_STATUS.id"
+              (change)="onToggleStatus(task)">
+            </mat-slide-toggle>
+            <!-- Delete Task Button -->
+            <button mat-icon-button (click)="onDeleteTask(task)">
+              <mat-icon color="primary">delete</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+
+<!-- Add New Task Button -->
+<button mat-raised-button (click)="openAddTaskDialog()">Add new task</button>

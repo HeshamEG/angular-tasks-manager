@@ -1,0 +1,24 @@
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="add-task-modal">
+  <!-- Task Title Input -->
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Task Title</mat-label>
+    <input matInput type="text" formControlName="title" placeholder="Task Title" />
+    <!-- Error Message for Required Field -->
+    <mat-error *ngIf="taskForm.get('title')?.hasError('required') && taskForm.get('title')?.touched">
+      Task Title is required.
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Task Body Textarea -->
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Task Body</mat-label>
+    <textarea matInput formControlName="body" placeholder="Task Body"></textarea>
+    <!-- Error Message for Required Field -->
+    <mat-error *ngIf="taskForm.get('body')?.hasError('required') && taskForm.get('body')?.touched">
+      Task Body is required.
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Submit Button -->
+  <button type="submit" mat-raised-button color="primary">Submit</button>
+</form>
