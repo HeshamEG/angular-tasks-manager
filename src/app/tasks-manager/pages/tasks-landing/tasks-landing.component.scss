@@ -1,9 +1,4 @@
-// Reusable Color Palette
-$primary-color: #1e1c1c; // Primary text color
-$background-color: white; // Background color
-$border-color: #444444; // Border color
-$section-title-color: white; // Section title text color
-
+@import "../../../../app/theme/colors.scss";
 /* Component Styles */
 :host {
   display: flex;

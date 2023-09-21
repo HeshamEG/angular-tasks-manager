@@ -1,18 +1,3 @@
-<!-- Filter Section -->
-<h4 class="section-title">Filter</h4>
-<mat-form-field>
-  <mat-label>Status</mat-label>
-  <!-- Status Filter Dropdown -->
-  <mat-select id="statusFilter" (selectionChange)="onChangeStatus($event)">
-    <!-- All Option -->
-    <mat-option [value]="null">all</mat-option>
-    <!-- Status Options Loop -->
-    <mat-option *ngFor="let status of statusOptions" [value]="status">
-      {{ status | statusFilter }}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
-
 <!-- Task List Section -->
 <mat-card>
   <mat-card-content>

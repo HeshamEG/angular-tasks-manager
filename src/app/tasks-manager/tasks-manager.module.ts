@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TasksListComponent } from './pages/tasks-list/tasks-list.component';
+import { TasksLandingComponent } from './pages/tasks-landing/tasks-landing.component';
 import { RouterModule } from '@angular/router';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
@@ -13,17 +13,21 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { StatusFilterPipe } from '../pipes/status-filter.pipe';
 import { MatDialogModule } from '@angular/material/dialog';
-import { AddTaskModalComponent } from './components/add-task-modal/add-task-modal.component';
+import { AddTaskModalComponent } from './pages/tasks-landing/components/add-task-modal/add-task-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { tasksManagerRoutes } from './tasks-manager.router';
 import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
+import { TasksListFilterComponent } from './pages/tasks-landing/components/tasks-list-filter/tasks-list-filter.component';
+import { TasksListComponent } from './pages/tasks-landing/components/tasks-list/tasks-list.component';
 
 @NgModule({
   declarations: [
     ConfirmationModalComponent,
+    TasksListFilterComponent,
     AddTaskModalComponent,
+    TasksLandingComponent,
     TasksListComponent,
     StatusFilterPipe,
   ],
@@ -43,6 +47,6 @@ import { ConfirmationModalComponent } from './components/confirmation-modal/conf
     CommonModule,
     FormsModule,
     NgFor,
-  ]
+  ],
 })
-export class TasksManagerModule { }
+export class TasksManagerModule {}
